@@ -24,6 +24,7 @@ $(function(){
 	// methods
 	siteMenuClone();
 	countNums();
+	generateMap();
 	addMouseClickAnime();
 	printTable(countyList);
 	generateAreaPieChart();
@@ -85,7 +86,12 @@ $(function(){
 	// Generate city detail info
 	$(document).on("click", ".card-link", function(){
 		const cityId = $(this).attr("city");
-		if(cityId < 6) {
+		const info = _.find(cityInfo, function(obj) {
+			if (obj.city === largest_cities[cityId]) {
+				return true;
+			}
+		});
+		if(info && _.size(info) > 0) {
 			$("#info-not-exist").css("display", "none");
 			generateCityInfo(largest_cities[cityId])
 		} else {
@@ -154,8 +160,7 @@ function siteMenuClone () {
 
 	$(window).resize(function() {
 		const $this = $(this),
-			w = $this.width();
-
+		w = $this.width();
 		if ( w > 768 ) {
 			if ( body.hasClass('offcanvas-menu') ) {
 				body.removeClass('offcanvas-menu');
@@ -243,6 +248,22 @@ function addMouseClickAnime() {
 				});
 		});
 	});
+}
+
+function generateMap() {
+	const map_div = $("<div></div>").attr("id", "map");
+	$("#map-area").html(map_div);
+	$("#map").css({
+		"width": "100%",
+		"height": "600px",
+		"border-radius": "10px",
+		"box-shadow": "0 15px 30px 0 rgba(0, 0, 0, 0.3)"
+	});
+	let map = L.map('map').setView([53.5, -8.5], 6);
+	L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		maxZoom: 15,
+		attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+	}).addTo(map);
 }
 
 function printTable(countyList) {
@@ -389,13 +410,13 @@ function generateCarousel() {
 		for(let j = 0; j < 3; j++) {
 			if(l_c_index < largest_cities.length) {
 				const col = $("<div></div>").addClass("col-4 col-inner-center");
-				const card = $("<div></div>").addClass("card text-center").css("width", "18rem");
+				const card = $("<div></div>").addClass("card text-center card-link").css("width", "18rem")
+					.css("cursor", "pointer").attr("city", l_c_index).attr("onclick", "location.href='#section5'");
 				const img = $("<img alt=\"\" src=\"\">")
 					.attr("src", "images/card/" + largest_cities[l_c_index] + ".jpg")
 					.addClass("card-img-top").attr("alt", largest_cities[l_c_index] + " Image");
 				const card_body = $("<div></div>").addClass("card-body");
-				const link = $("<a></a>").attr("href", "#section5").addClass("card-link")
-					.attr("city", l_c_index).html(largest_cities[l_c_index]);
+				const link = $("<span></span>").html(largest_cities[l_c_index]);
 				card_body.append(link);
 				card.append(img).append(card_body);
 				col.append(card);
