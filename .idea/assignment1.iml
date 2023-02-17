@@ -12,5 +12,13 @@
     <orderEntry type="library" name="5badc55ad0" level="application" />
     <orderEntry type="library" name="echarts" level="application" />
     <orderEntry type="library" name="leaflet" level="application" />
+    <orderEntry type="library" name="bootstrap" level="application" />
+    <orderEntry type="library" name="OwlCarousel2" level="application" />
+    <orderEntry type="library" name="fancybox" level="application" />
+    <orderEntry type="library" name="icomoon" level="application" />
+    <orderEntry type="library" name="aos" level="application" />
+    <orderEntry type="library" name="jquery-animateNumber" level="application" />
+    <orderEntry type="library" name="waypoints" level="application" />
+    <orderEntry type="library" name="lodash.js" level="application" />
   </component>
 </module>

@@ -1,31 +1,18 @@
-<!-- /*
-* Template Name: Tour
-* Template Author: Untree.co
-* Tempalte URI: https://untree.co/
-* License: https://creativecommons.org/licenses/by/3.0/
-*/ -->
 <!doctype html>
 <html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="author" content="Untree.co">
+	<meta name="author" content="Yuhong He">
 	<link rel="shortcut icon" href="favicon.png">
 
-	<meta name="description" content="" />
-	<meta name="keywords" content="bootstrap, bootstrap4" />
-
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+Pro:wght@400;700&display=swap" rel="stylesheet">
-
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl.theme.default.min.css">
-	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<!-- Style Libraries -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 	<link rel="stylesheet" href="fonts/icomoon/style.css">
-	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-	<link rel="stylesheet" href="css/aos.css">
 	<link rel="stylesheet" href="css/style.css">
 
 	<title>Ireland Info</title>
@@ -33,7 +20,7 @@
 
 <body>
 
-
+	<!-- Navbar -->
 	<div class="site-mobile-menu site-navbar-target">
 		<div class="site-mobile-menu-header">
 			<div class="site-mobile-menu-close">
@@ -42,120 +29,135 @@
 		</div>
 		<div class="site-mobile-menu-body"></div>
 	</div>
-
 	<nav class="site-nav">
 		<div class="container">
 			<div class="site-navigation">
 				<a href="index.html" class="logo m-0">Ireland Info</a>
-
 				<ul class="js-clone-nav d-none d-lg-inline-block text-left site-menu float-right">
 					<li class="active"><a href="#section1">Intro</a></li>
 					<li><a href="#section2">County</a></li>
 					<li><a href="#section3">Statistics</a></li>
 					<li><a href="#section4">Largest Cities</a></li>
 				</ul>
-
 				<a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-none light" data-toggle="collapse" data-target="#main-navbar">
 					<span></span>
 				</a>
-
 			</div>
 		</div>
-	</nav>
+	</nav> <!-- Navbar finish -->
 
 
+
+	<!-- Section 1: Intro -->
 	<div class="hero" id="section1">
 		<div class="container">
 			<div class="row align-items-center gy-5">
+
+				<!-- Left -->
 				<div class="col-lg-7">
 					<div class="intro-wrap">
 						<h1 class="mb-5 title-area">
 							<span class="title-text">Republic of Ireland</span>
 						</h1>
-						<div class="row">
-							<div class="col-12">
-								<form class="panel">
-									<div class="row gy-3">
-										<div class="col-4">
-											<div>
-												<div class="section1-item-title">Capital</div>
-												<div class="section1-item-text">
-													<span>Dublin</span>
-												</div>
-											</div>
-										</div>
-										<div class="col-4">
-											<div>
-												<div class="section1-item-title">Population</div>
-												<div class="section1-item-text">
-													<span class="section1-counter" data-number="4761865">0</span>
-												</div>
-											</div>
-										</div>
-										<div class="col-4">
-											<div>
-												<div class="section1-item-title">
-													Area
-													<span>km<sup>2</sup></span></div>
-												<div class="section1-item-text">
-													<span class="section1-counter" data-number="70273">0</span>
-												</div>
-											</div>
-										</div>
-										<div class="col-6">
-											<div>
-												<div class="section1-item-title">GDP</div>
-												<div class="section1-item-text">
-													<span>$</span>
-													<span class="section1-counter" data-number="633">0</span>
-													<span>billion</span>
-												</div>
-											</div>
-										</div>
-										<div class="col-6">
-											<div>
-												<div class="section1-item-title">GDP per Capita</div>
-												<div class="section1-item-text">
-													<span>$</span>
-													<span class="section1-counter" data-number="124596">0</span>
-												</div>
-											</div>
-										</div>
-										<div class="col-12">
-											<div class="section1-btn">
-												<button type="button" class="btn btn-warning"><a href="#section2">Let's Go</a></button>
-											</div>
+
+						<div class="panel">
+							<div class="row gy-3">
+
+								<!-- row 1 -->
+								<div class="col-4">
+									<div>
+										<div class="section1-item-title">Capital</div>
+										<div class="section1-item-text">
+											<span>Dublin</span>
 										</div>
 									</div>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
+								</div>
+								<div class="col-4">
+									<div>
+										<div class="section1-item-title">Population</div>
+										<div class="section1-item-text">
+											<span class="section1-counter" data-number="4761865">0</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-4">
+									<div>
+										<div class="section1-item-title">
+											Area
+											<span>km<sup>2</sup></span></div>
+										<div class="section1-item-text">
+											<span class="section1-counter" data-number="70273">0</span>
+										</div>
+									</div>
+								</div>
+
+								<!-- row 2 -->
+								<div class="col-6">
+									<div>
+										<div class="section1-item-title">GDP</div>
+										<div class="section1-item-text">
+											<span>$</span>
+											<span class="section1-counter" data-number="633">0</span>
+											<span>billion</span>
+										</div>
+									</div>
+								</div>
+								<div class="col-6">
+									<div>
+										<div class="section1-item-title">GDP per Capita</div>
+										<div class="section1-item-text">
+											<span>$</span>
+											<span class="section1-counter" data-number="124596">0</span>
+										</div>
+									</div>
+								</div>
+
+								<!-- row 3 -->
+								<div class="col-12">
+									<div class="section1-btn">
+										<button type="button" class="btn btn-warning"><a href="#section2">Let's Go</a></button>
+									</div>
+								</div>
+
+							</div> <!-- Panel row finish -->
+						</div> <!-- Panel finish -->
+					</div> <!-- Intro wrap finish -->
+				</div> <!-- Left finish -->
+
+				<!-- Right -->
 				<div class="col-lg-5">
 					<iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&amp;q=Ireland" loading="lazy" frameborder="0" class="section1-map" allowfullscreen></iframe>
 				</div>
-			</div>
-		</div>
-	</div>
+
+			</div> <!-- Outer row finish -->
+		</div> <!-- Container finish -->
+	</div> <!-- Section 1 finish -->
 
 
+
+	<!-- Section 2: County List -->
 	<div class="untree_co-section" id="section2">
 		<div class="container">
+
+			<!-- Header -->
 			<div class="row mb-5 justify-content-center">
 				<div class="col-lg-6 text-center">
 					<h2 class="section-title text-center mb-3">County List</h2>
 				</div>
 			</div>
+
+			<!-- Body -->
 			<div class="row align-items-stretch">
+
+				<!-- Left -->
 				<div class="col-lg-4">
 					<div class="h-100" id="county-location-map-div">
 						<img src="images/map/Ireland.png" class="rounded mx-auto d-block img-fluid" height="500" alt="Location Map">
 					</div>
 				</div>
 
+				<!-- Right -->
 				<div class="col-12 col-sm-12 col-lg-8  feature-1-wrap d-md-flex flex-md-column order-lg-1" >
-
 					<div class="section2-table">
 						<table class="table table-hover">
 							<thead>
@@ -183,28 +185,33 @@
 									</th>
 								</tr>
 							</thead>
+							<!-- Table body, render from JavaScript -->
 							<tbody id="county_list_table_body"></tbody>
 						</table>
-					</div>
-
-				</div>
-
-			</div>
-		</div>
-	</div>
+					</div> <!-- Table div finish -->
+				</div> <!-- Right finish -->
+			</div> <!-- Body finish -->
+		</div> <!-- Container finish -->
+	</div> <!-- Section 2 finish -->
 
 
 
+	<!-- Section 3: Statistics -->
 	<div class="untree_co-section" id="section3">
 		<div class="container">
+
+			<!-- Header -->
 			<div class="row justify-content-center text-center mb-5">
 				<div class="col-lg-6">
 					<h2 class="section-title text-center mb-3">Statistics</h2>
 				</div>
 			</div>
+
+			<!-- Body -->
 			<div class="row">
 				<div class="statistics-accordion-area">
 					<div class="accordion" id="accordionExample">
+
 						<div class="accordion-item">
 							<h2 class="accordion-header" id="headingOne">
 								<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -217,6 +224,7 @@
 								</div>
 							</div>
 						</div>
+
 						<div class="accordion-item">
 							<h2 class="accordion-header" id="headingTwo">
 								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -229,6 +237,7 @@
 								</div>
 							</div>
 						</div>
+
 						<div class="accordion-item">
 							<h2 class="accordion-header" id="headingThree">
 								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -241,77 +250,102 @@
 								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+
+					</div> <!-- Accordion finish -->
+				</div> <!-- Accordion area finish -->
+			</div> <!-- Body finish -->
+		</div> <!-- Container finish -->
+	</div> <!-- Section 3 finish -->
 
 
 
+	<!-- Section 4: Largest Cities & Towns -->
 	<div class="untree_co-section" id="section4">
 		<div class="container">
-			<div class="row text-center justify-content-center mb-5">
-				<div class="col-lg-7"><h2 class="section-title text-center">Largest Cities & Towns</h2></div>
-			</div>
 
-			<div class="row">
-				<div class="carousel-area">
-					<div id="carouselExample" class="carousel carousel-dark slide">
-						<div class="carousel-inner">
-							<!-- Generated From JS -->
-						</div>
-						<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="visually-hidden">Previous</span>
-						</button>
-						<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="visually-hidden">Next</span>
-						</button>
-					</div>
+			<!-- Header -->
+			<div class="row text-center justify-content-center mb-5">
+				<div class="col-lg-7">
+					<h2 class="section-title text-center">Largest Cities & Towns</h2>
 				</div>
 			</div>
 
-		</div>
-	</div>
+			<!-- Body -->
+			<div class="row">
+
+				<!-- carousel -->
+				<div id="carouselExample" class="carousel carousel-dark slide">
+					<div class="carousel-inner">
+						<!-- carousel body, render by javascript -->
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div> <!-- Carousel finish -->
+
+			</div> <!-- Body finish -->
+		</div> <!-- Container finish -->
+	</div> <!-- Section 4 finish -->
 
 
 
+	<!-- Section 5: Detail -->
 	<div class="untree_co-section" id="section5">
 		<div class="container">
+
+			<!-- Body -->
 			<div class="row justify-content-between align-items-center gy-5">
 
+				<!-- Alert -->
 				<div class="alert alert-warning alert-dismissible fade show" role="alert" id="info-not-exist" style="display: none;">
 					<strong>Sorry</strong>, the info will come soon.
 					<button type="button" class="btn-close" id="close-info-alert" aria-label="Close"></button>
 				</div>
-				
+
+				<!-- Left: video -->
 				<div class="col-lg-6">
 					<figure class="img-play-video">
 						<a id="play-video" class="video-play-button" href="" data-fancybox>
 							<span></span>
 						</a>
-						<img src="" id="video-cover-img" alt="Image" class="img-fluid rounded-20">
+						<img src="" id="video-cover-img" alt="Image" class="img-fluid rounded-20"> <!-- video url render by javascript -->
 					</figure>
 				</div>
 
+				<!-- Right: info -->
 				<div class="col-lg-5">
-					<h2 class="section-title text-left mb-4" id="city-name"></h2>
-					<div id="city-info-paragraph"></div>
-					<p><a href="" target="_blank" class="btn btn-primary" id="wikipedia-url">Learn More</a></p>
+					<h2 class="section-title text-left mb-4" id="city-name">
+						<!-- title, render by javascript -->
+					</h2>
+					<div id="city-info-paragraph">
+						<!-- info body, render by javascript -->
+					</div>
+					<p><a href="" target="_blank" class="btn btn-primary" id="wikipedia-url">Learn More</a></p> <!-- wikipedia url render by javascript -->
 				</div>
-			</div>
-		</div>
-	</div>
+
+			</div> <!-- Body finish -->
+		</div> <!-- Container finish -->
+	</div> <!-- Section 5 finish -->
 
 
 
+	<!-- Section 6: Developer -->
 	<div class="untree_co-section testimonial-section mt-5">
 		<div class="container">
+
+			<!-- Body -->
 			<div class="row justify-content-center">
 				<div class="col-lg-7 text-center">
+
+					<!-- Header -->
 					<h2 class="section-title text-center mb-5">Developer</h2>
+
+					<!-- carousel -->
 					<div class="owl-single owl-carousel no-nav">
 						<div class="testimonial mx-auto">
 							<figure class="img-wrap">
@@ -322,16 +356,20 @@
 								<p>&ldquo;I just want to finish the assignment.&rdquo;</p>
 							</blockquote>
 						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+					</div><!-- carousel finish -->
+
+				</div> <!-- Col finish -->
+			</div> <!-- Body finish -->
+		</div> <!-- Container finish -->
+	</div> <!-- Section 6 finish -->
 
 
-	
+
+	<!-- Section 7: Contact -->
 	<div class="py-5 cta-section">
 		<div class="container">
+
+			<!-- Body -->
 			<div class="row text-center">
 				<div class="col-md-12">
 					<h2 class="mb-2 text-white">Contact Us</h2>
@@ -340,56 +378,70 @@
 						<button class="btn btn-outline-white text-white btn-md font-weight-bold" id="open-comments-modal">Get in touch</button>
 					</p>
 				</div>
-			</div>
-		</div>
-	</div>
+			</div> <!-- Body finish -->
+		</div> <!-- Container finish -->
 
-	<div class="modal" tabindex="-1" id="comments-modal" style="display: none">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title">Leave Comments</h5>
-					<button type="button" class="btn-close close-comments-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+		<!-- Modal -->
+		<div class="modal" tabindex="-1" id="comments-modal" style="display: none">
+			<div class="modal-dialog">
+				<div class="modal-content">
+
+					<div class="modal-header">
+						<h5 class="modal-title">Leave Comments</h5>
+						<button type="button" class="btn-close close-comments-modal" data-bs-dismiss="modal" aria-label="Close"></button>
+					</div>
+
+					<div class="modal-body">
+						<form>
+							<div class="mb-3">
+								<label for="modal-email" class="form-label">Email</label>
+								<input type="email" class="form-control" id="modal-email" placeholder="name@example.com">
+								<div></div>
+							</div>
+							<div class="mb-3">
+								<label for="modal-comments" class="form-label">Comments</label>
+								<textarea class="form-control" id="modal-comments" rows="10" style="height: 100px"></textarea>
+								<div></div>
+							</div>
+						</form>
+					</div>
+
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary close-comments-modal" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-primary" id="send-comments">Confirm</button>
+					</div>
+
+				</div> <!-- Modal content finish -->
+			</div> <!-- Modal dialog finish -->
+		</div> <!-- Modal finish -->
+
+		<!-- Toast -->
+		<div class="toast-container position-fixed bottom-0 end-0 p-3">
+			<div id="sendNotificationToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+				<div class="toast-body">
+					Thank you, the message has been sent.
 				</div>
-				<div class="modal-body">
-					<form>
-						<div class="mb-3">
-							<label for="modal-email" class="form-label">Email</label>
-							<input type="email" class="form-control" id="modal-email" placeholder="name@example.com">
-							<div></div>
-						</div>
-						<div class="mb-3">
-							<label for="modal-comments" class="form-label">Comments</label>
-							<textarea class="form-control" id="modal-comments" rows="10" style="height: 100px"></textarea>
-							<div></div>
-						</div>
-					</form>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary close-comments-modal" data-bs-dismiss="modal">Close</button>
-					<button type="button" class="btn btn-primary" id="send-comments">Confirm</button>
-				</div>
 			</div>
-		</div>
-	</div>
+		</div> <!-- Toast finish -->
 
-	<div class="toast-container position-fixed bottom-0 end-0 p-3">
-		<div id="sendNotificationToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-			<div class="toast-body">
-				Thank you, the message has been sent.
-			</div>
-		</div>
-	</div>
+	</div> <!-- Section 7 finish -->
 
 
 
+	<!-- Section 8: My Improvement -->
 	<div class="untree_co-section">
 		<div class="container">
+
+			<!-- Header -->
 			<div class="row text-center justify-content-center mb-5">
 				<div class="col-lg-7"><h2 class="section-title text-center">My Improvements</h2></div>
 			</div>
+
+			<!-- Body -->
 			<div class="row">
 				<div class="my-improvements">
+
+					<!-- list-group -->
 					<ul class="list-group" style="width: 100%;">
 						<li class="list-group-item">
 							<div class="row">
@@ -398,13 +450,14 @@
 								</div>
 								<div class="col-9">
 									<ul>
-										<li>Upgrade Bootstrap from v4.5.2 to v5.3.0;</li>
+										<li>Upgrade Bootstrap from v4.5.2 to v5.2.3;</li>
 										<li>Clean up HTML, JavaScript and CSS;</li>
 										<li>Change the import JavaScript library method to CDN.</li>
 									</ul>
 								</div>
 							</div>
 						</li>
+
 						<li class="list-group-item">
 							<div class="row">
 								<div class="col-3">
@@ -420,6 +473,7 @@
 								</div>
 							</div>
 						</li>
+
 						<li class="list-group-item">
 							<div class="row">
 								<div class="col-3">
@@ -432,6 +486,7 @@
 								</div>
 							</div>
 						</li>
+
 						<li class="list-group-item">
 							<div class="row">
 								<div class="col-3">
@@ -448,6 +503,7 @@
 								</div>
 							</div>
 						</li>
+
 						<li class="list-group-item">
 							<div class="row">
 								<div class="col-3">
@@ -464,6 +520,7 @@
 								</div>
 							</div>
 						</li>
+
 						<li class="list-group-item">
 							<div class="row">
 								<div class="col-3">
@@ -478,6 +535,7 @@
 								</div>
 							</div>
 						</li>
+
 						<li class="list-group-item">
 							<div class="row">
 								<div class="col-3">
@@ -494,6 +552,7 @@
 								</div>
 							</div>
 						</li>
+
 						<li class="list-group-item">
 							<div class="row">
 								<div class="col-3">
@@ -507,6 +566,7 @@
 								</div>
 							</div>
 						</li>
+
 						<li class="list-group-item">
 							<div class="row">
 								<div class="col-3">
@@ -519,6 +579,7 @@
 								</div>
 							</div>
 						</li>
+
 						<li class="list-group-item">
 							<div class="row">
 								<div class="col-3">
@@ -533,6 +594,7 @@
 								</div>
 							</div>
 						</li>
+
 						<li class="list-group-item">
 							<div class="row">
 								<div class="col-3">
@@ -545,6 +607,7 @@
 								</div>
 							</div>
 						</li>
+
 						<li class="list-group-item">
 							<div class="row">
 								<div class="col-3">
@@ -557,18 +620,26 @@
 								</div>
 							</div>
 						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
+					</ul> <!-- list-group finish -->
+
+				</div> <!-- my-improvements div -->
+			</div> <!-- Body finish -->
+		</div> <!-- Container finish -->
+	</div> <!-- Section 8 finish -->
 
 
 
+	<!-- Footer -->
 	<div class="site-footer">
+
+		<!-- Upper part -->
 		<div class="inner first">
 			<div class="container">
+
+				<!-- body -->
 				<div class="row">
+
+					<!-- left col -->
 					<div class="col-md-6 col-lg-4">
 						<div class="widget">
 							<h3 class="heading">About Us</h3>
@@ -583,6 +654,8 @@
 							</ul>
 						</div>
 					</div>
+
+					<!-- central col -->
 					<div class="col-md-6 col-lg-2">
 						<div class="widget">
 							<h3 class="heading">Section</h3>
@@ -595,6 +668,8 @@
 							</ul>
 						</div>
 					</div>
+
+					<!-- right col -->
 					<div class="col-md-6 col-lg-4">
 						<div class="widget">
 							<h3 class="heading">Contact</h3>
@@ -605,12 +680,11 @@
 							</ul>
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
+				</div> <!-- Body finish -->
+			</div> <!-- Container finish -->
+		</div> <!-- Upper part finish -->
 
-
-
+		<!-- Lower part -->
 		<div class="inner dark">
 			<div class="container">
 				<div class="row text-center">
@@ -618,12 +692,14 @@
 						<p>MIT License - TU Dublin computer science student Yuhong He developed based on <a href="https://themewagon.com/themes/free-bootstrap-5-travel-agency-website-template-tour/">Tour</a> Website Template</p>
 						<p>CC-BY 3.0 License &mdash; Template designed by <a href="https://untree.co" class="link-highlight">Untree.co</a> Distributed By <a href="https://themewagon.com" target="_blank" >ThemeWagon</a></p>
 					</div>
-					
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> <!-- Footer finish -->
 
+
+
+	<!-- Loading animation -->
 	<div id="overlayer"></div>
 	<div class="loader">
 		<div class="spinner-border" role="status">
@@ -631,19 +707,19 @@
 		</div>
 	</div>
 
-	<script src="js/jquery-3.4.1.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.animateNumber.min.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/jquery.fancybox.min.js"></script>
-	<script src="js/aos.js"></script>
-	<script src="js/moment.min.js"></script>
-	<script src="js/lodash.min.js"></script>
+
+
+	<!-- JavaScript Libraries -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-animateNumber/0.0.14/jquery.animateNumber.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.1/echarts.min.js"></script>
 	<script src="https://kit.fontawesome.com/5badc55ad0.js" crossorigin="anonymous"></script>
-
 	<script src="js/custom.js"></script>
 </body>
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="PROJECT" libraries="{5badc55ad0, echarts, jquery, leaflet}" />
+    <file url="PROJECT" libraries="{5badc55ad0, OwlCarousel2, aos, bootstrap, echarts, fancybox, icomoon, jquery, jquery-animateNumber, leaflet, lodash.js, waypoints}" />
   </component>
 </project>
