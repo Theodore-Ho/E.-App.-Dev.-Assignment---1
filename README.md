@@ -10,6 +10,8 @@ This project is the first assignment of Enterprise Application Develop course of
 
 The topic I choose is the introduction of Ireland.
 
+The assignment was developed based on [Tour – Free Bootstrap 5 Travel Agency Website Template](https://themewagon.com/themes/free-bootstrap-5-travel-agency-website-template-tour/).
+
 ### Functionalities
 
 ##### Section 1: Intro
